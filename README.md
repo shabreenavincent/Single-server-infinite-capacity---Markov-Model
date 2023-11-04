@@ -46,30 +46,13 @@ else:
 print("---------------------------------------------------------------")
 ```
 ### Output :
-<table border=5>
-    <tr>
-        <td>
-            
-```C
-Enter the mean inter arrival time of objects from Feeder (in secs): 12
-Enter the mean  inter service time of Lathe Machine (in secs) :  1
-Enter the Additional time taken for the Robot (in secs) :  7
---------------------------------------------------------------
-Single Server with Infinite Capacity - (M/M/1):(oo/FIFO)
---------------------------------------------------------------
-The mean arrival rate per second : 0.08 
-The mean service rate per second : 0.12 
-Average number of objects in the system : 2.00 
-Average number of objects in the conveyor :  1.33 
-Average waiting time of an object in the system : 24.00 secs
-Average waiting time of an object in the conveyor : 16.00 secs
-Probability that the system is busy : 0.67 
-Probability that the system is empty : 0.33 
----------------------------------------------------------------
-```
-</td>
-</tr>
-</table>
+
+
+![Screenshot 2023-11-04 105112](https://github.com/shabreenavincent/Single-server-infinite-capacity---Markov-Model/assets/119475721/042f4fdc-3111-4f77-a989-8bbe4fee4f1c)
+
+
+
+
 
 ### Result :
 The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
