@@ -1,33 +1,25 @@
-# Single server with infinite capacity (M/M/1):(oo/FIFO)
-## Aim :
+# EX-04 Single Server with Infinite Capacity (M/M/1):(oo/FIFO)
+### Aim :
 To find (a) average number of materials in the system (b) average number of materials in the conveyor (c) waiting time of each material in the system (d) waiting time of each material in the conveyor, if the arrival  of materials follow poisson process with the mean interval time 12 seconds, serivice time of lathe machine follows exponential distribution with mean serice time 1 second and average service time of robot is 7seconds.
-
-## Software required :
-Visual components and Python
-
-## Theory:
+### Software required :
+Visual components and Python.
+### Theory:
 Queuing are the most frequently encountered problems in everyday life. For example, queue at a cafeteria, library, bank, etc. Common to all of these cases are the arrivals of objects requiring service and the attendant delays when the service mechanism is busy. Waiting lines cannot be eliminated completely, but suitable techniques can be used to reduce the waiting time of an object in the system. A long waiting line may result in loss of customers to an organization. Waiting time can be reduced by providing additional service facilities, but it may result in an increase in the idle time of the service mechanism.
-
-![image](1.png)
-
+<img src="https://github.com/ROHITJAIND/EX-04-Single-Server-Infinite-Capacity-Markov-Model/assets/118707073/3a1e3acb-5e59-4fa7-8db8-2a7abb8ebb10">
 This is a queuing model in which the arrival is Marcovian and departure distribution is also Marcovian,number of server is one and size of the queue is also Marcovian,no.of server is one and size of the queue is infinite and service discipline is 1st come 1st serve(FCFS) and the calling source is also finite.
+### Procedure :
+<img height=21% width=60% src="https://github.com/ROHITJAIND/EX-04-Single-Server-Infinite-Capacity-Markov-Model/assets/118707073/932ef1af-1768-4a3e-af26-5f8bc07d4b7c">
 
-## Procedure :
+### Experiment :
+<img height=15% width=50% src="https://github.com/ROHITJAIND/EX-04-Single-Server-Infinite-Capacity-Markov-Model/assets/118707073/646d9962-a984-4b3b-9a5c-ade5ae8ed6eb">
 
-![imAGE](2.png)
-
-
-
-## Experiment:
-
-
- 
-## Program
+### Program :
 ```
-Developed By : Shabreena Vincent
-Register Number : 212222230141
+Developed By: Shabreena Vincent
+Register No: 212222230141
 ```
-```python
+
+```Python
 arr_time=float(input("Enter the mean inter arrival time of objects from Feeder (in secs): "))
 ser_time=float(input("Enter the mean  inter service time of Lathe Machine (in secs) :  "))
 Robot_time=float(input("Enter the Additional time taken for the Robot (in secs) :  "))
@@ -53,13 +45,31 @@ else:
     print("Warning! Objects Over flow will happen in the conveyor")
 print("---------------------------------------------------------------")
 ```
-## Output :
+### Output :
+<table border=5>
+    <tr>
+        <td>
+            
+```C
+Enter the mean inter arrival time of objects from Feeder (in secs): 12
+Enter the mean  inter service time of Lathe Machine (in secs) :  1
+Enter the Additional time taken for the Robot (in secs) :  7
+--------------------------------------------------------------
+Single Server with Infinite Capacity - (M/M/1):(oo/FIFO)
+--------------------------------------------------------------
+The mean arrival rate per second : 0.08 
+The mean service rate per second : 0.12 
+Average number of objects in the system : 2.00 
+Average number of objects in the conveyor :  1.33 
+Average waiting time of an object in the system : 24.00 secs
+Average waiting time of an object in the conveyor : 16.00 secs
+Probability that the system is busy : 0.67 
+Probability that the system is empty : 0.33 
+---------------------------------------------------------------
+```
+</td>
+</tr>
+</table>
 
-
-![Screenshot 2023-11-04 105112](https://github.com/shabreenavincent/Single-server-infinite-capacity---Markov-Model/assets/119475721/ef2f9e15-71c3-4685-ba75-80789a50ec33)
-
-
-
-
-## Result :
+### Result :
 The average number of material in the sysytem and in the conveyor and waiting time are successfully found.
